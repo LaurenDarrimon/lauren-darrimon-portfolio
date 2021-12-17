@@ -51,5 +51,6 @@ Screen shot goes here.
 
 ## Credits
 
-Thanks to [UC Berekely Extension Coding Bootcamp ](https://bootcamp.berkeley.edu/coding/)
- for this project, which is part of the course curriculum. 
+Thanks to [Meyer Web](http://meyerweb.com/eric/tools/css/reset/) for the reset CSS. 
+   v2.0 | 20110126
+   License: none (public domain)
