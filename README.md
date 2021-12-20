@@ -14,6 +14,8 @@
 
 ## Description
 
+This site is a simple one page site built with HTML and CSS to display some of Lauren Duker Darrimon's web design work, and in the future, her web development work. 
+
 
 
 ## Link
@@ -54,3 +56,5 @@ Screen shot goes here.
 Thanks to [Meyer Web](http://meyerweb.com/eric/tools/css/reset/) for the reset CSS. 
    v2.0 | 20110126
    License: none (public domain)
+
+Thanks to [Formspree](http://formspree.io/) for the free form functionality. 

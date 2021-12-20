@@ -17,7 +17,7 @@
 body {
     background-color: var(--white) ;
     color: var(--black);
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 header {
@@ -27,6 +27,10 @@ header {
     background-image: linear-gradient(to bottom right, var(--black), var(--dark) );
     justify-content: space-between;
     align-items: center;
+}
+
+#title {
+    padding:20px;
 }
  
 nav{
@@ -50,6 +54,16 @@ nav ul li a{
     text-transform: uppercase;
 }
 
+ /* my page links were jumping to an area too low, as 
+ the top nav bar was covering the top of the content. So I added empty id tags to an element above the headers, 
+ with visibility hidden, and position set above where it's located in teh flow of the page (-200px above where it really is, 
+ so that the nav bar won't obscure the heading i want people to jump to. Fun! */
+ a.landing {
+    visibility:hidden;
+    top: -150px;
+    position: relative;
+}
+
 .banner {
     width: 100%;
     height: 700px;
@@ -58,31 +72,42 @@ nav ul li a{
     background-position: center;
 }
 
+#heading {
+    padding:25px;
+}
+
 section{
     padding:50px;
     margin:50px;
     background-image: linear-gradient(to bottom, var(--celadon), var(--grey) );
 }
 
-
- /* my page links were jumping to an area too low, as 
- the top nav bar was covering the header of the content. So i added the id tags to an element above the headers, 
- with visibility hidden, and position set above where it's located in teh flow of the page (-200px above where it really is, 
- so that the nav bar won't obscure the heading i want people to jump to. Fun! */
-a.landing {
-    visbility:hidden;
-    top: -100px;
-    position: relative;
+.projects{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.cards{
+    padding:1rem;
+}
+
+.cards img {
+    max-width:100%;
+    height:auto;
+}
 
 footer {
 
     width:100%;
-    background-image: linear-gradient(to bottom right, var(--dark), var(--grey) );
+    background-image: linear-gradient(to bottom right, var(--dark), var(--black) );
     align-items: center;
     padding:50px;
     text-align: center;
     color: var(--cream);
-
 }
