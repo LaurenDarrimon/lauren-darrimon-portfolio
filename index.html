@@ -4,15 +4,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lauren Duker Darrimon - Web Development Portfolio/title>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Lauren Duker Darrimon - Web Development Portfolio</title>
+  <!-- <link rel="stylesheet" href="./assets/reset.css" /> -->
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 
 <body>
 
+   <header>
+     <div id="title">
+        <a href="index.html">
+            <img src="lauren-logo.png" alt="Lauren Duker Development Wave logo" />
+        </a>
+     </div>
+
+     <nav>
+        <ul>
+          <li>
+            <a href="#about" title="About Lauren">About Lauren</a>
+          </li>
+          <li>
+           <a href="#portfolio" title="See Portfolio">Portfolio</a>
+          </li>
+         <li>
+           <a href="#contact" title="Contact Lauren">Contact</a>
+          </li>
+       </ul>
+     </nav>
+
+   </header> 
+
+   <main>
+
+      <h1>Lauren Duker Darrimon</h1>
+      <h2> Design & Development</h2>
+
+      <a class="landing" id="about"></a>
+      <section>
+        <h2>
+          About Lauren
+        </h2>
+
+        <p>
+          Lauren specializes in inspired web development and design  
+          for small businesses. Lauren’s years as a designer gave her an eye 
+          for beauty. Her techinical background started in physics, but later 
+          blossomed into her career as a full-stack web developer and designer.
+          Lauren is a one stop shop for both design 
+          and development. With the eye of a designer and 
+          the ability of a developer, your vision will come to life!
+        </p>
+
+
+      </section>
+
+      <a class="landing" id="portfolio"></a>
+      <section>
+        <h2>
+          Design & Development Portfolio
+        </h2>
+
+        <p>
+          Lauren’s past clients include cannabis brands, yoga teachers, travel companies, 
+          skincare lines, musicians, artists, and more. 
+          Whatever your business, we think of designing a website as a 
+          collaborative process of co-creation. Lauren strives to keep your 
+          work with her light-hearted, joyful, and efficient. The design 
+          process should be organized and structured enough to keep 
+          it stress free, yet loose enough to allow creativity to work 
+          its magic!
+        </p>
+      
+      </section>
+
+      
+      <a class="landing" id="contact"></a>
+      <section>
+        <h2>
+          Get a message to me. 
+        </h2>
+
+        <form action="https://formspree.io/f/xoqrqbgb" method="POST">
+          <p>
+            <label for="name">Name</label>
+              <input type="text" name="name" id="name" 
+              placeholder="First & Last Name" required>
+          </p>
+              <br>
+          <p class="service-select">
+              <em> Select any services of interest.</em> 
+              <br>
+              <br>
     
+                <input type="checkbox" name="service-select" id="logo_design" value="logo"> 
+                <label for="logo_design">Logo Design / Branding</label> 
+                  <br> 
+    
+                <input type="checkbox" name="service-select" id="basic-site" value="basic-site"> 
+                <label for="basic-site">Simple Website Design</label> 
+                  <br>
+    
+                <input type="checkbox" name="service-select" id="full-site" value="full-site"> 
+                <label for="full-site">Web Development</label>   
+          </p>
+              <br>
+          <p>
+              <label for="project"> <em> More details about your project. </em> </label>
+                <br>
+                <br>
+              <textarea 
+                name="project" 
+                id="project"
+                rows="10" 
+                cols="30">
+                1 - 2 sentences 
+              </textarea>
+    
+          </p>
+    
+    
+            <fieldset>
+              <legend>Your Contact Info</legend>
+            
+                  <p>
+                    <label for="email1">Email</label>
+                    <input type="email" id="email1" name="email1" placeholder="you@email.com">
+                  </p>
+    
+                  <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name= "phone">
+                  </p>
+        
+                  <p>
+                  <em> your preferred contact method </em> 
+                  <br>
+    
+                    <input type= "radio" name= "contact-method" value= "email"> Email<br>
+    
+                    <input type= "radio" name= "contact-method" value= "text-message"> Text Message <br>
+    
+                    <input type= "radio" name= "contact-method" value= "phone" checked> Phone<br>
+    
+                    <input type= "radio" name= "contact-method" value= "pigeon"> Carrier Pigeon <br>
+                  </p>
+          
+                  <p>
+                  <button type="submit">
+                    Submit Inquiry
+                  </button>
+    
+                  <button type="reset">
+                    Clear All
+                  </button>
+                  </p>
+    
+            </fieldset>
+        
+       
+      
+    
+        </form>
+
+      
+      </section>
+  
+
+
+
+   </main>
+
+   <footer>
+      <h2>
+        Thank you! 
+      </h2>
+
+
+   </footer>
 
 </body>
 
