@@ -144,6 +144,8 @@ nav ul li a:hover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* page will scroll past the image for a cool parallax effect */
+    background-attachment: fixed;
 }
 
 
@@ -319,4 +321,8 @@ footer {
         padding: 0 25px 25px 25px;
     }
     
+    /* turns off parallax for mobile & tablet*/
+    .hero{
+        background-attachment: scroll;
+    }
 }
