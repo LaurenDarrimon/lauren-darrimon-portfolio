@@ -1,3 +1,5 @@
+
+/*declare color variables*/
 :root{
     --white: #f5f5f5;
     --cream: #FFF8EE;
@@ -7,24 +9,23 @@
     --black: #000;
 }
 
+/*set box sizing to include border so percatage width calculations will work better*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-
+/* set primary color and background for the body */
 body {
     background-color: var(--black) ;
     color: var(--cream);
+    /* add padding to top to account for nav bar covering the top of the content*/
     padding-top: 165px;
     font-family: Arial, sans-serif;
 }
 
-body, html{
-    height: 100%;
-}
-
+/* set various heading sizes and styles*/
 h1 {
     font-size: 3rem;
     font-weight: bolder;
@@ -59,9 +60,7 @@ h5 {
     padding-top: 0.5rem;
 }
 
-
-
-
+/* affix the header to the top and front of the page */
 header {
     position:fixed;
     top:0;
@@ -73,39 +72,46 @@ header {
     z-index: 1;
 }
 
+/* spacing for the title logo image */
 #title {
     padding:5px;
     display: inline-block;
 }
 
+/* and glow on hover */
 #title:hover {
     box-shadow: inset 0px 0px 8px
     var(--cream), 0 0 15px
     var(--white);
 }
  
+/* position the nav to the right and center it vertically */
 nav{
     display: inline-block;
     float:right;
     align-items: center;
+    margin-top: 15px;
 }
 
+/*  remove bullets from unordered list */
 nav ul {
     list-style-type: none;
-
 }
 
+/* display list items in a row, not vertically */
 nav ul li {
     display: inline-block;
     padding: 15px;
 }
 
+/* remove underline from nav links, make them all uppercase */
 nav ul li a{
     color:var(--cream);
     text-decoration: none;
     text-transform: uppercase;
 }
 
+/* nav links glow on hover */
 nav ul li a:hover {
     box-shadow: inset 0px 0px 8px
     var(--cream), 0 0 15px
@@ -122,7 +128,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-
+/* add glow effect to the primary site heading text */
 #heading {
     padding:35px;
     padding-left:150px;
@@ -135,6 +141,7 @@ nav ul li a:hover {
         0 0 60px var(--grey);
 }
 
+/*  set color, spacing and position on each section element */
 section{
     color: var(--dark);
     padding:100px;
@@ -144,57 +151,65 @@ section{
     background-image: linear-gradient(to bottom, var(--celadon), var(--grey) );
 }
 
+/* links inside sections will be light green */
 section a {
     color: var(--celadon);
 }
 
+/* turn the bio section into a flexbox and space the items evently  */
 .bio{
     display:flex;
     justify-content: space-evenly;
 }
 
+/* set the bio image to a max of 30% width, add padding between it and text*/
 .bio img{
     max-width:30%;
     padding-right:50px;
 }
 
-
+/* turn the projects section into a css grid with three columns across*/
 .projects{
     display:grid;
     grid-gap:1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* text above portfolio only goes across 70% of the box for readability. */
 .section p, .section h2 {
     max-width:70%;
-    padding: 0, 25px, 25px, 25px;
+    padding: 0 25px 25px 25px;
 }
 
+/* the first .card in the portfolio will span 3 columns */
 .first {
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
+/* padding, color, and background image on cards is gradient */
 .cards{
     padding:1rem;
     color:var(--cream);
     background-image: linear-gradient(to bottom right, var(--dark), var(--black) );
 }
 
+/* card outline will glow on hover */
 .cards:hover {
     box-shadow: inset 0px 0px 8px
     var(--cream), 0 0 15px
     var(--white);
 }
 
-
+/* the images inside the cards will take up the whole width, 
+and the height will adjust to keep the image in proportion */
 .cards img {
     max-width:100%;
     height:auto;
 }
 
+/* footer is 100% of body (and therefore screen), colors, & positioning  */
 footer {
-
     width:100%;
     background-image: linear-gradient(to bottom right, var(--dark), var(--black) );
     align-items: center;
@@ -211,7 +226,7 @@ footer {
     /*  nav stacks (instead of spreading out) and shrinks */
     nav ul li {
         display: block;
-        padding: 0 px;
+        padding: 5px;
         font-size: .9rem;
     }
 
@@ -261,4 +276,11 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    /*  text above portfolio goes full width*/
+    .section p, .section h2 {
+        max-width:100%;
+        padding: 0 25px 25px 25px;
+    }
+    
 }
