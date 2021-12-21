@@ -17,7 +17,7 @@
 body {
     background-color: var(--black) ;
     color: var(--cream);
-    padding-top: 195px;
+    padding-top: 165px;
     font-family: Arial, sans-serif;
 }
 
@@ -74,7 +74,7 @@ header {
 }
 
 #title {
-    padding:20px;
+    padding:5px;
     display: inline-block;
 }
 
@@ -201,4 +201,63 @@ footer {
     padding:50px;
     text-align: center;
     color: var(--cream);
+}
+
+/*  */
+/* Make responsive for mobile with media queries */
+/*  mobile */
+@media (max-width:768px) {
+    /*  nav stacks (instead of spreading out) and shrinks */
+    nav ul li {
+        display: block;
+        padding: 0 px;
+        font-size: .9rem;
+    }
+
+    /*  less padding */
+    header{
+        padding:10px;
+    }
+    
+    /*  dispaly switches from grid to block */
+    .projects{
+        display: block;
+    }
+
+    /*  add top & bottom margins to replace gird-gap */
+    .cards{
+        margin: 50px 0px;
+    }
+
+    /*  dcrease padding */
+    section{
+        padding:50px;
+        margin:50px;
+    }
+}
+
+@media (max-width:992px) {
+    
+    nav ul li {
+        display: block;
+        padding: 0 px;
+        font-size: .9rem;
+    }
+
+    header{
+        padding:10px;
+    }
+    
+    .projects{
+        display: block;
+    }
+
+    .cards{
+        margin: 50px 0px;
+    }
+
+    section{
+        padding:50px;
+        margin:50px;
+    }
 }
