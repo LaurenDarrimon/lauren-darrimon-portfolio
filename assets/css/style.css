@@ -207,6 +207,19 @@ and the height will adjust to keep the image in proportion */
     max-width:100%;
     height:auto;
 }
+/*form & button styling*/
+button {
+    padding:10px;
+    margin:5px;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 8px
+    var(--cream), 0 0 15px
+    var(--white);
+}
+
+
 
 /* footer is 100% of body (and therefore screen), colors, & positioning  */
 footer {

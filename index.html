@@ -5,50 +5,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lauren Duker Darrimon - Web Development Portfolio</title>
+  <!-- wipes browser specific styling for more universal look/feel across browsers-->
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 
 <body>
-
-   <header>
-     <div id="title">
-        <a href="index.html">
+   <!-- header contins title and nav bar-->
+  <header>
+      <!-- div for title image-->
+      <div id="title">
+        <a href="index.html" >
             <img src="assets/images/lauren-duker-logo.png" alt="Lauren Duker Development logo" />
         </a>
-     </div>
+      </div>
 
-     <nav>
+      <!-- nav conatings a list of links that will jump to sections on the page or open a file -->
+      <nav>
         <ul>
           <li>
             <a href="#about" title="About Lauren">About Lauren</a>
           </li>
           <li>
-           <a href="#portfolio" title="See Portfolio">Portfolio</a>
-          </li>
-         <li>
-           <a href="#contact" title="Contact Lauren">Contact</a>
+            <a href="#portfolio" title="See Portfolio">Portfolio</a>
           </li>
           <li>
+            <a href="#contact" title="Contact Lauren">Contact</a>
+          </li>
+          <li>
+            <!-- the attribute target="_blank" means resume file will open in a new tab-->
             <a href="assets/resume-lauren-duker-darrimon.pdf" target="_blank" title="See Resume">Resume</a>
-           </li>
-       </ul>
-     </nav>
+            </li>
+        </ul>
+      </nav>
+  </header> 
 
-   </header> 
-
-   <main>
-     
+  <!--main content will go inside semantic main tag-->
+  <main>
+      <!-- text heading title goes here-->
       <div id="heading">
           <h1>Lauren Duker Darrimon</h1>
           <h2>Design & Development</h2>
       </div>
 
-
+      <!-- this is a landing tag that sites above the section, 
+      so that the nav links will jump to the correct section, without being 
+      obscured by the nav bar-->
       <a class="landing" id="about"></a>
+
+      <!-- section.bio is a flexbox to contain a photo and bio text-->
       <section class="bio">
         <img src ="assets/images/lauren-duker-bio.jpg" alt="Lauren in a teal shirt smiling" />
+        
+        <!-- .bio header and text are wrapped in a div so they can be 
+        easily positioned together-->
         <div> 
             <h2>
               About Lauren
@@ -66,7 +77,7 @@
           </div>
       </section>
 
-
+      <!-- another tag for naviagtion -->
       <a class="landing" id="portfolio"></a>
       <section class="section">
         <h2>
@@ -86,42 +97,52 @@
 
         <br><br>
 
+        <!-- portfolio secton containing all portfolio cards will be a CSS grid-->
         <div class="projects">
+          <!-- the first card will have special styling to be larger, so it needs its own class-->
           <div class="cards first">
+              <!-- image is link to deployed site-->
               <a href = "http://www.walterstrauss.com" target="_blank"> 
                   <img src ="assets/images/walter.jpg" alt="earth-toned musician website" />
               </a>
               <h3>Web Design</h3>
+              <!-- title is also link to deployed site-->
               <a href = "http://www.walterstrauss.com" target="_blank"> 
                   <h4>Walter Strauss Musician</h4>
               </a>
           </div>
 
           <div class="cards">
+              <!-- image is link to deployed site-->
               <a href = "http://www.euphoriaretreats.com" target="_blank"> 
                   <img src ="assets/images/travel.jpeg" alt="blue-toned travel website with man on a sailboat" />
               </a>
               <h3>Web Design & Content</h3>
+              <!-- title is also link to deployed site-->
               <a href = "http://www.euphoriaretreats.com" target="_blank"> 
                   <h4>Euphoria Retreats & Travel</h4>
               </a>
           </div>
 
           <div class="cards">
+            <!-- image is link to deployed site-->
             <a href = "http://www.christiancoy.com" target="_blank"> 
                 <img src ="assets/images/skincare-card.png" alt="botanical skincare line logo on hovering business card." />
             </a>
             <h3>Web & Print Design</h3>
+            <!-- title is also link to deployed site-->
             <a href = "http://www.christiancoy.com" target="_blank">
                 <h4>Christian Coy Skincare</h4>
             </a>
           </div>
 
           <div class="cards">
+            <!-- image is link to deployed site-->
             <a href = "http://www.composedyoga.com" target="_blank"> 
                 <img src ="assets/images/composed-yoga-mobile.jpg" alt="yoga and wroting website on deep green foliage"/>
             </a>
             <h3>Web Design & Branding</h3>
+            <!-- title is also link to deployed site-->
             <a href = "http://www.composedyoga.com" target="_blank"> 
                 <h4>Composed Yoga </h4>
             </a>
@@ -129,15 +150,20 @@
         </div>
       </section>
 
-      
+      <!-- navigation id tag-->
       <a class="landing" id="contact"></a>
       <section>
         <h2>
           Get a message to me. 
         </h2>
 
+        <!-- I went down a little bit of a form rabbit hole in an effort to 
+        learn some new stuff! -->
+        <!-- formspree integration will actually send forms to my email using these action & method attributes -->
         <form action="https://formspree.io/f/xoqrqbgb" method="POST">
           <p>
+            <!-- single line of text input labeled and id tagged as name, 
+              so that when the form is filled out, the value will come with a label-->
             <label for="name">Name</label>
               <input type="text" name="name" id="name" 
               placeholder="First & Last Name" required>
@@ -147,12 +173,13 @@
               <em> Select any services of interest.</em> 
               <br>
               <br>
-    
+                <!-- input type checkbox allows you to select more than one option-->
                 <input type="checkbox" name="service-select" id="logo_design" value="logo"> 
                 <label for="logo_design">Logo Design / Branding</label> 
                   <br> 
     
                 <input type="checkbox" name="service-select" id="basic-site" value="basic-site"> 
+                <!-- every form option must have a label so that the form recipient will know what the value was in repsonse to-->
                 <label for="basic-site">Simple Website Design</label> 
                   <br>
     
@@ -161,59 +188,56 @@
           </p>
               <br>
           <p>
+              <!-- this form option allows for multiple lines of text -->
               <label for="project"> <em> More details about your project. </em> </label>
                 <br>
                 <br>
+              <!-- rows and cols set width and height of text box input -->
+              <!-- this is the paceholdertext-->
               <textarea 
                 name= "project" 
                 id= "project"
-                rows= "10" 
-                cols= "30">
-                1 - 2 sentences 
-              </textarea>
+                rows= "8" 
+                cols= "25">1 - 2 sentences</textarea>
     
           </p>
           
           <br><br>
 
           <div>
-            <fieldset>
-              <legend>Your Contact Info</legend>
-            
-                  <p>
-                    <label for = "email1">Email</label>
-                    <input type = "email" id="email1" name="email1" placeholder="you@email.com">
-                  </p>
+              <h3>Your Contact Info</h3>
+              <p>
+                <label for = "email1">Email</label>
+                <input type = "email" id="email1" name="email1" placeholder="you@email.com">
+              </p>
+
+              <p>
+                <label for = "phone">Phone</label>
+                <input type = "tel" id="phone" name= "phone">
+              </p>
     
-                  <p>
-                    <label for = "phone">Phone</label>
-                    <input type = "tel" id="phone" name= "phone">
-                  </p>
-        
-                  <p>
-                  <em> your preferred contact method </em> 
-                  <br>
-    
-                    <input type= "radio" name = "contact-method" value= "email"> Email<br>
-    
-                    <input type= "radio" name = "contact-method" value= "text-message"> Text Message <br>
-    
-                    <input type= "radio" name = "contact-method" value= "phone" checked> Phone<br>
-    
-                    <input type= "radio" name = "contact-method" value= "pigeon"> Carrier Pigeon <br>
-                  </p>
-          
-                  <p>
-                  <button type="submit">
-                    Submit Inquiry
-                  </button>
-    
-                  <button type="reset">
-                    Clear All
-                  </button>
-                  </p>
-    
-            </fieldset>
+              <p>
+              <em> your preferred contact method </em> 
+              <br>
+                <!-- this is a radio form, which only allows for one option to be selected. -->
+                <input type= "radio" name = "contact-method" value= "email"> Email<br>
+
+                <input type= "radio" name = "contact-method" value= "text-message"> Text Message <br>
+
+                <input type= "radio" name = "contact-method" value= "phone" checked> Phone<br>
+
+                <input type= "radio" name = "contact-method" value= "pigeon"> Carrier Pigeon <br>
+              </p>
+      
+              <p>
+              <button type="submit">
+                Submit Inquiry
+              </button>
+
+              <button type="reset">
+                Clear All
+              </button>
+              </p>
           </div>
         
     
@@ -222,15 +246,15 @@
       
       </section>
 
-   </main>
+  </main>
 
-   <footer>
+  <footer>
       <h2>
         Thank you! 
       </h2>
 
 
-   </footer>
+  </footer>
 
 </body>
 
