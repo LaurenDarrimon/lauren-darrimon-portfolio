@@ -15,39 +15,48 @@
 
 
 body {
-    background-color: var(--white) ;
-    color: var(--black);
+    background-color: var(--black) ;
+    color: var(--cream);
     padding-top: 150px;
     font-family: Arial, sans-serif;
 }
 
+body, html{
+    height: 100%;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: bolder;
     padding-bottom: 1rem;
+    padding-top: 0.5rem;
 }
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
     padding-bottom: 1rem;
+    padding-top: 0.5rem;
 
 }
 h4 {
     font-size: 1.2rem;
     font-weight: bold;
     padding-bottom: 1rem;
+    padding-top: 0.5rem;
     
 }
 h5 {
     font-size: 1.1rem;
     font-weight: bold;
     padding-bottom: 1rem;
+    padding-top: 0.5rem;
 }
 
 
@@ -61,6 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:30px;
+    z-index: 1;
 }
 
 #title {
@@ -100,21 +110,14 @@ nav ul li a{
     position: relative;
 }
 
-.banner {
-    width: 100%;
-    height: 700px;
-    background-image: url("assets/vintage-computer.jpg");
-    background-size: cover;
-    background-position: center;
-}
 
 #heading {
     padding:25px;
 }
 
 section{
-    padding:50px;
-    margin:50px;
+    padding:100px;
+    margin:100px;
     justify-content: space-evenly;
     background-image: linear-gradient(to bottom, var(--celadon), var(--grey) );
 }
@@ -131,7 +134,7 @@ section{
 
 .projects{
     display:grid;
-    grid-gap:1rem;
+    grid-gap:1.5rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
