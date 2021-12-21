@@ -23,6 +23,7 @@ body {
     /* add padding to top to account for nav bar covering the top of the content*/
     padding-top: 165px;
     font-family: Arial, sans-serif;
+    line-height: 1.5rem;
 }
 
 /* set various heading sizes and styles*/
@@ -32,18 +33,21 @@ h1 {
     text-transform: uppercase;
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
+    line-height: 3rem;
 }
 h2 {
     font-size: 2.2rem;
     font-weight: bolder;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
+    line-height: 3rem;
 }
 h3 {
     font-size: 1.7rem;
     font-weight: bold;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
+    line-height: 1.5rem;
 
 }
 h4 {
@@ -209,8 +213,10 @@ and the height will adjust to keep the image in proportion */
 }
 /*form & button styling*/
 button {
-    padding:10px;
-    margin:5px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: var(--celadon);
 }
 
 button:hover {
