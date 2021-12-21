@@ -131,13 +131,16 @@ nav ul li a:hover {
 }
 
 .hero {
- 
+    /* add background image with relative path to css file, not to index.html */
     background-image: url(../images/vintage-computer-green.jpg);
     width: 100vw;
     height: 90vh;
     
+    /* make the background a flexbox so I can position things inside it. */
     display: flex; 
     align-items: flex-end;   
+
+    /*position the image in the center and don't repeat/ tile the image it */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,7 +167,7 @@ section{
     color: var(--dark);
     padding:75px;
     margin:100px;
-    margin-top:25;
+    margin-top: 25px;
     justify-content: space-evenly;
     background-image: linear-gradient(to bottom, var(--celadon), var(--grey) );
 }
