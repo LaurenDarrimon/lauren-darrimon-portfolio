@@ -20,7 +20,7 @@ This site is a simple one page site built with HTML and CSS to display some of L
 
 ## Link
 
-[Live Portfolio Site] (https://laurendarrimon.github.io/lauren-darrimon-portfolio/)
+[Live Portfolio Site](https://laurendarrimon.github.io/lauren-darrimon-portfolio/)
 
 
 ## Built With
