@@ -20,8 +20,6 @@
 body {
     background-color: var(--black) ;
     color: var(--cream);
-    /* add padding to top to account for nav bar covering the top of the content*/
-    padding-top: 165px;
     font-family: Arial, sans-serif;
     line-height: 1.5rem;
 }
@@ -132,6 +130,22 @@ nav ul li a:hover {
     position: relative;
 }
 
+.hero {
+ 
+    background-image: url(../images/vintage-computer-green.jpg);
+    width: 100vw;
+    height: 90vh;
+    
+    display: flex; 
+    align-items: flex-end;   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
 /* add glow effect to the primary site heading text */
 #heading {
     padding:35px;
@@ -148,9 +162,9 @@ nav ul li a:hover {
 /*  set color, spacing and position on each section element */
 section{
     color: var(--dark);
-    padding:100px;
+    padding:75px;
     margin:100px;
-    margin-top:0;
+    margin-top:25;
     justify-content: space-evenly;
     background-image: linear-gradient(to bottom, var(--celadon), var(--grey) );
 }
