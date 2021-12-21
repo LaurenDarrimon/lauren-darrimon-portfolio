@@ -59,6 +59,10 @@ h5 {
     padding-top: 0.5rem;
 }
 
+section a {
+    color: var(--celadon);
+}
+
 
 
 
